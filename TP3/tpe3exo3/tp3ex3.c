@@ -12,7 +12,7 @@ int main() {
 	do
 	{
 		printf_s("entrer la note n°%d \n", i);
-		scanf_s("%f", &N);
+		scanf_s("%.2f", &N);
 		if (N < 0 || N>20)
 		{
 			printf_s("eleve absent ? ou voulez-vous arreter la saisie des notes ? A/O/N\n Absent=A\n Arret de la saisie=O\n Continuer la saisie =N\n ");
@@ -59,8 +59,8 @@ int main() {
 		somme += notes[j];
 	}
 	moyenne = somme / valide;
-	printf_s(" la note minimale est %f et la note maximuale est %f\n", min, max);
-	printf_s("la moyenne de classe est %f\n", moyenne);
+	printf_s(" la note minimale est %.2f et la note maximale est %.2f\n", min, max);
+	printf_s("la moyenne de classe est %.2f\n", moyenne);
 
 
 }
